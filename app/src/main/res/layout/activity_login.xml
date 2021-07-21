@@ -4,47 +4,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="16dp"
     >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="@android:color/holo_blue_bright"
+        android:textColor="@android:color/holo_blue_dark"
         android:text="LOGIN"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"/>
    <ImageView
        android:layout_width="match_parent"
        android:layout_height="65dp"
        android:background="@null"
        android:src="@drawable/icon_present"
        android:layout_gravity="center"
-       />
-    <EditText
+       android:contentDescription="TODO"
+       android:layout_marginBottom="16dp"/>
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:hint="Email"
-        android:layout_height="50dp"
-        />
-    <EditText
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:hint="Email"-->
+<!--        android:layout_height="50dp"-->
+<!--        />-->
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:hint="Password"
-        android:layout_height="50dp"
-        />
-    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="PassWord"/>
+<!--            android:textColor="@drawable/btn_blue"-->
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
         android:background="@drawable/btn_blue"
-        android:text="Login"
-        />
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/icon_present" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:text="Login"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Or"
+        android:layout_marginBottom="10dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Login"
+        android:text="Sing Up"
+        android:background="@drawable/btn_darkblue"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"
         />
     <LinearLayout
         android:layout_width="match_parent"
