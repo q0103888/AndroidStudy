@@ -4,26 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="24dp"
     >
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@android:color/holo_blue_dark"
-        android:text="LOGIN"
-        android:textSize="24sp"
-        android:layout_marginBottom="16dp"/>
-   <ImageView
-       android:layout_width="match_parent"
-       android:layout_height="65dp"
-       android:background="@null"
-       android:src="@drawable/icon_present"
-       android:layout_gravity="center"
-       android:contentDescription="TODO"
-       android:layout_marginBottom="16dp"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@android:color/holo_blue_dark"-->
+<!--        android:text="LOGIN"-->
+<!--        android:textSize="24sp"-->
+<!--        android:layout_marginBottom="16dp"/>-->
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="173dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:src="@drawable/facebook_profile_image" />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,6 +31,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@color/white"
             android:hint="Email" />
     </com.google.android.material.textfield.TextInputLayout>
 <!--    <EditText-->
@@ -45,8 +46,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@color/white"
             android:hint="PassWord"/>
-<!--            android:textColor="@drawable/btn_blue"-->
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -57,6 +58,7 @@
         android:background="@drawable/btn_blue"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
+        android:layout_marginBottom="10dp"
         >
 
         <ImageView
@@ -71,7 +73,6 @@
             android:textColor="#ffffff"
             android:text="Login"
             android:stateListAnimator="@null"
-            android:layout_marginBottom="10dp"
             />
     </LinearLayout>
     <TextView
@@ -85,9 +86,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Sing Up"
-        android:background="@drawable/btn_darkblue"
         android:textColor="#ffffff"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_blue"
         />
     <LinearLayout
         android:layout_width="match_parent"

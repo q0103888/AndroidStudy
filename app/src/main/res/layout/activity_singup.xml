@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="16dp"
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="TODO"
+        android:src="@drawable/facebook_profile_image" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="23dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="아이디(이메일)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"/>
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_singup"
+            android:text="중복확인"
+            android:textColor="@color/black"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="비밀번호"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="PassWord"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="이름"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="휴대폰 번호"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Number"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="생년월일"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="8자리입력"/>
+
+</LinearLayout>
