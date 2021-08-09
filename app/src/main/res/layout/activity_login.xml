@@ -8,14 +8,7 @@
     android:paddingRight="40dp"
     android:paddingTop="24dp"
     >
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:gravity="center"-->
-<!--        android:textColor="@android:color/holo_blue_dark"-->
-<!--        android:text="LOGIN"-->
-<!--        android:textSize="24sp"-->
-<!--        android:layout_marginBottom="16dp"/>-->
+
     <ImageView
         android:layout_width="170dp"
         android:layout_height="173dp"
@@ -32,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/white"
-            android:hint="Email" />
+            android:hint="Email"
+            android:id="@+id/TextInputEditText_email"/>
     </com.google.android.material.textfield.TextInputLayout>
 <!--    <EditText-->
 <!--        android:layout_width="match_parent"-->
@@ -47,33 +41,44 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/white"
-            android:hint="PassWord"/>
+            android:hint="PassWord"
+            android:id="@+id/TextInputEditText_password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
+        android:id="@+id/LinearLayout_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:background="@drawable/btn_blue"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:weightSum="1"
         >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:stateListAnimator="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Login"
+            android:layout_marginLeft="30dp"
+            />
 
         <ImageView
             android:layout_width="35dp"
             android:layout_height="30dp"
-            android:layout_gravity="center"
             android:background="@null"
-            android:src="@drawable/icon_present" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textColor="#ffffff"
-            android:text="Login"
-            android:stateListAnimator="@null"
+            android:gravity="center"
+            android:src="@drawable/icon_present"
             />
+
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -82,14 +87,39 @@
         android:text="Or"
         android:layout_marginBottom="10dp"
         />
-    <Button
+    <LinearLayout
+        android:id="@+id/LinearLayout_singup"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Sing Up"
-        android:textColor="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/btn_darkblue"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_blue"
-        />
+        android:clickable="true"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:stateListAnimator="@null"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Sing up"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@null"
+            android:src="@drawable/icon_book" />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

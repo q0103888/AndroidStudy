@@ -52,7 +52,7 @@
         android:inputType="textPersonName"/>
 
         <Button
-            android:layout_width="85dp"
+            android:layout_width="100dp"
             android:layout_height="45dp"
             android:layout_marginLeft="10dp"
             app:backgroundTint="@null"
@@ -129,5 +129,16 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="8자리입력"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_singup"
+        android:text="Sing Up!"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:backgroundTint="@null" />
 
 </LinearLayout>
