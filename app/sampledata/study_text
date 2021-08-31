@@ -1,0 +1,32 @@
+여기에는 android studio를 공부하면서 작성할 기록장
+
+레이아웃의 종류
+1. linearLayout = 방향을 수평or수직중 원하는것을 배치하는 레이아웃 (기본 레이아웃)
+    android:orientation="vertical" - 요소들을 수직 방향으로 배치
+    android:orientation="horizontal" - 요소들을 수평 방향으로 배치
+
+2. relativeLayout = 다른 요소들에 의해 상대적으로 위치가 결정되는 레이아웃 각 뷰간 연결고리가 있어
+                    서로 연결되어 위치가 결정됨
+    android:layout_toLeftOf="" 좌측배치
+    android:layout_toRightOf="" 우측배치
+    android:layout_above="" 상단배치
+    android:layout_below="" 하단배치
+    빈칸은 기준이되는 뷰를 입력
+
+3. FrameLayout = 액자라는 의미로 컨텐츠들이 겹겹이 쌓여 제일 앞에 순으로 컨텐츠가 사용자에게 보임
+    top                      : 부모 레이아웃 내 상단에 위치
+    bottom                   : 부모 레이아웃 내 하단에 위치
+    left                     : 부모 레이아웃 내 좌측에 위치
+    right                    : 부모 레이아웃 내 우측에 위치
+    center_vertical          : 세로방향 기준으로 가운데 위치
+    fill_vertical            : 세로 방향으로 가득 채움
+    center_horizontal        : 가로방향 기준으로 가운데 위치
+    fill_horizontal          : 가로 방향으로 가득 채움
+    center                   : 가로/세로 방향 기준 가운데 정렬
+    fill                     : 가로/세로 방향으로 가득 채움
+    clip_vertical            : 세로방향 기준으로 레이아웃외의 영역은 자름
+    clip_horizontal          : 가로방향 기준으로 레이아웃외의 영역은 자름
+    start                    : 부모 레이아웃 내 시작점 위치에 정렬
+    end                      : 부모 레이아웃 내 시작점 끝점에 정렬
+    위치는 위와같이 조정하며, 부모 위치의 방향으로 위치를 결정한다.
+

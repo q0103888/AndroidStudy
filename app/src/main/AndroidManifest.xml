@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lhhapp">
-
+    <!--application 앱의 기본 설정들
+        drawable = 필요한 사진이나 디자인들을 모아두는 곳
+        layout 화면에 표시되는 화면을 모아두는 곳
+        values 자신이 원하는 컬러를 등록하거나 리스너의 내용들을 등록하는 곳-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
