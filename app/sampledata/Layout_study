@@ -30,3 +30,7 @@
     end                      : 부모 레이아웃 내 시작점 끝점에 정렬
     위치는 위와같이 조정하며, 부모 위치의 방향으로 위치를 결정한다.
 
+Margin과 padding의 차이점
+    Marigin - View의 경계와 다른 뷰 사이의 거리
+    padding - View 경계와 content(Ex-textview)경계간의 거리
+
