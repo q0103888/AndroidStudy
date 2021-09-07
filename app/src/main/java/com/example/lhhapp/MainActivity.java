@@ -2,8 +2,9 @@ package com.example.lhhapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText TextInputEditText_email,TextInputEditText_password;
     LinearLayout LinearLayout_login, LinearLayout_singup;
     Button btn1, btn2, btn3;
+    Button testbtn;
     TextView textView_btn1;
     private Spinner spinner; //프로젝트 생성에 있는 spinner
     private ListView list;
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sharedexample);
+        setContentView(R.layout.activity_main);
 
         // 밑 내용은 아직 덜 작성(로그인 화면에 대한 액션들)
 //        TextInputEditText_email    = findViewById(R.id.TextInputEditText_email); //findView = 화면에서 컴포넌트를 찾아라
@@ -51,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
         btn2 = (Button)findViewById(R.id.btn_2);
         btn3 = (Button)findViewById(R.id.btn_3);
         textView_btn1 = findViewById(R.id.LinearLayout_singup);
+
+        testbtn = (Button)findViewById(R.id.testbtn);
+        testbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CustomNavi.class);
+                startActivity(intent);
+            }
+        });
 
 
         // Fragment에 대한 자바 코드
@@ -130,9 +141,6 @@ public class MainActivity extends AppCompatActivity {
 //        String value = sharedPreferences.getString("LHH", "");
 //        et_save.setText(value);
 
-        //webview에 대한 자바
-        webView = (WebView)findViewById(R.id.webview);
-
     }
 
 //    @Override
@@ -146,4 +154,5 @@ public class MainActivity extends AppCompatActivity {
 //        editor.putString("LHH", value); //저장하는 값 lhh라는 별명으로 저장함
 //        editor.commit();
 //    }
+
 }
