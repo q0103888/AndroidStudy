@@ -18,6 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
+
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -83,32 +84,32 @@ public class camera extends AppCompatActivity {
         return image;
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
-            Bitmap bitmap = BitmapFactory.decodeFile(imageFilePath);
-            ExifInterface exif = null;
-
-            try {
-                exif = new ExifInterface(imageFilePath);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            int exifOrientation;
-            int exifDegree;
-
-            if(exif != null) {
-                exifOrientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
-                exifDegree = exifOrientationToDegress(exifOrientation);
-            } else {
-                exifDegree = 0;
-            }
-
-            ((ImageView)findViewById(R.id.iv_result)).setImageBitmap(rotate(bitmap,exifDegree));
-
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
+//            Bitmap bitmap = BitmapFactory.decodeFile(imageFilePath);
+//            ExifInterface exif = null;
+//
+//            try {
+//                exif = new ExifInterface(imageFilePath);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//            int exifOrientation;
+//            int exifDegree;
+//
+//            if(exif != null) {
+//                exifOrientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
+//                exifDegree = exifOrientationToDegress(exifOrientation);
+//            } else {
+//                exifDegree = 0;
+//            }
+//
+//            ((ImageView)findViewById(R.id.iv_result)).setImageBitmap(rotate(bitmap,exifDegree));
+//
+//        }
+//    }
 
     private int exifOrientationToDegress(int exifOrientation) {
         if(exifOrientation == ExifInterface.ORIENTATION_ROTATE_90) {

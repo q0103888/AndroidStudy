@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText TextInputEditText_email,TextInputEditText_password;
     LinearLayout LinearLayout_login, LinearLayout_singup;
     Button btn1, btn2, btn3;
-    Button testbtn;
+    Button testbtn, gocal;
     TextView textView_btn1;
     private Spinner spinner; //프로젝트 생성에 있는 spinner
     private ListView list;
@@ -54,11 +54,20 @@ public class MainActivity extends AppCompatActivity {
         btn3 = (Button)findViewById(R.id.btn_3);
         textView_btn1 = findViewById(R.id.LinearLayout_singup);
 
+        gocal = (Button)findViewById(R.id.gocal);
+        gocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), calculator.class);
+                startActivity(intent);
+            }
+        });
+
         testbtn = (Button)findViewById(R.id.testbtn);
         testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CustomNavi.class);
+                Intent intent = new Intent(getApplicationContext(), webview.class);
                 startActivity(intent);
             }
         });

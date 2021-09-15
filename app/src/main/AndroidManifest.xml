@@ -23,9 +23,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        <provider-->
+<!--            android:authorities="com.example.lhhapp"-->
+<!--            android:name="android.support.v4.content.FileProvider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true"/>-->
+
+<!--        <meta-data-->
+<!--            android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--            />-->
+
         <activity android:name=".webview"/>
         <activity android:name=".sharedexample"/>
         <activity android:name=".CustomNavi"/>
+        <activity android:name=".camera"/>
+        <activity android:name=".calculator"/>
     </application>
 
 </manifest>

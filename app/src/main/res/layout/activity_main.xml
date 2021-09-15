@@ -16,9 +16,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Url Start" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/gocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계산기" />
     </FrameLayout>
     <ImageView
-        android:layout_width="130dp"
+        android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
         android:layout_marginLeft="145dp"
