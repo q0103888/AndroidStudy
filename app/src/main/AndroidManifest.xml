@@ -37,7 +37,6 @@
         <activity android:name=".webview"/>
         <activity android:name=".sharedexample"/>
         <activity android:name=".CustomNavi"/>
-        <activity android:name=".camera"/>
         <activity android:name=".calculator"/>
     </application>
 
