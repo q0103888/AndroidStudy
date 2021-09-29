@@ -33,7 +33,10 @@
 <!--        <meta-data-->
 <!--            android:name="android.support.FILE_PROVIDER_PATHS"-->
 <!--            />-->
+        <service android:name=".MusicService"/>
 
+
+        <activity android:name=".music_example"/>
         <activity android:name=".webview"/>
         <activity android:name=".sharedexample"/>
         <activity android:name=".CustomNavi"/>

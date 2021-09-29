@@ -1,5 +1,6 @@
 package com.example.lhhapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,14 +23,14 @@ public class music_example extends AppCompatActivity {
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startService(new Intent(getApplicationContext(), MusicService.class));
             }
         });
 
         btn_end.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                stopService(new Intent(getApplicationContext(), MusicService.class));
             }
         });
 

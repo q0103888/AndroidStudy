@@ -23,6 +23,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="계산기" />
+
+        <Button
+            android:layout_marginTop="100dp"
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음악실행" />
+
+        <Button
+            android:layout_marginTop="150dp"
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로딩" />
     </FrameLayout>
     <ImageView
         android:layout_width="120dp"

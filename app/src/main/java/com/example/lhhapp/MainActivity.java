@@ -1,6 +1,8 @@
 package com.example.lhhapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ButtonBarLayout;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText TextInputEditText_email,TextInputEditText_password;
     LinearLayout LinearLayout_login, LinearLayout_singup;
     Button btn1, btn2, btn3;
-    Button testbtn, gocal;
+    Button testbtn, gocal, musicbtn, loading;
     TextView textView_btn1;
     private Spinner spinner; //프로젝트 생성에 있는 spinner
     private ListView list;
@@ -72,37 +74,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        musicbtn = (Button)findViewById(R.id.music);
+        musicbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), music_example.class);
+                startActivity(intent);
+            }
+        });
+
+//        loading = (Button)findViewById(R.id.loading);
+//        loading.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), Singup.class);
+//                startActivity(intent);
+//            }
+//        });
+
 
         // Fragment에 대한 자바 코드
-//        btn1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//                Fragment1 fragment1 = new Fragment1();
-//                transaction.replace(R.id.frame, fragment1);
-//                transaction.commit();
-//            }
-//        });
-//
-//        btn2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//                Fragment2 fragment2 = new Fragment2();
-//                transaction.replace(R.id.frame, fragment2);
-//                transaction.commit();
-//            }
-//        });
-//
-//        btn3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//                Fragment3 fragment3 = new Fragment3();
-//                transaction.replace(R.id.frame, fragment3);
-//                transaction.commit();
-//            }
-//        });
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Fragment1 fragment1 = new Fragment1();
+                transaction.replace(R.id.frame, fragment1);
+                transaction.commit();
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Fragment2 fragment2 = new Fragment2();
+                transaction.replace(R.id.frame, fragment2);
+                transaction.commit();
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Fragment3 fragment3 = new Fragment3();
+                transaction.replace(R.id.frame, fragment3);
+                transaction.commit();
+            }
+        });
 
 
 //        textView_btn1 = findViewById(R.id.LinearLayout_singup); //로그인 창에서 회원가입 창으로 넘어가는거
