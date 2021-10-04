@@ -35,7 +35,7 @@
 <!--            />-->
         <service android:name=".MusicService"/>
 
-
+        <activity android:name=".tablelayout"/>
         <activity android:name=".music_example"/>
         <activity android:name=".webview"/>
         <activity android:name=".sharedexample"/>

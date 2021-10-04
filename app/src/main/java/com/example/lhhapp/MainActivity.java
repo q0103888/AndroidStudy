@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         gocal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), calculator.class);
+                Intent intent = new Intent(getApplicationContext(), tablelayout.class);
                 startActivity(intent);
             }
         });
